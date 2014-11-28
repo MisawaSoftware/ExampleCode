@@ -12,6 +12,8 @@
 		F6B1740E1A2822C0005212E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6B1740D1A2822C0005212E3 /* Images.xcassets */; };
 		F6B174111A2822C0005212E3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6B1740F1A2822C0005212E3 /* MainMenu.xib */; };
 		F6B1741D1A2822C0005212E3 /* ExampleCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B1741C1A2822C0005212E3 /* ExampleCodeTests.swift */; };
+		F6B174281A28241D005212E3 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B174271A28241D005212E3 /* Person.swift */; };
+		F6B1742A1A28266F005212E3 /* OutlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B174291A28266F005212E3 /* OutlineViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 		F6B174161A2822C0005212E3 /* ExampleCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6B1741B1A2822C0005212E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6B1741C1A2822C0005212E3 /* ExampleCodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleCodeTests.swift; sourceTree = "<group>"; };
+		F6B174271A28241D005212E3 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		F6B174291A28266F005212E3 /* OutlineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutlineViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 		F6B174051A2822C0005212E3 /* ExampleCode */ = {
 			isa = PBXGroup;
 			children = (
+				F6B174261A28240F005212E3 /* NSOutlineViewExample */,
 				F6B174081A2822C0005212E3 /* AppDelegate.swift */,
 				F6B1740D1A2822C0005212E3 /* Images.xcassets */,
 				F6B1740F1A2822C0005212E3 /* MainMenu.xib */,
@@ -107,6 +112,15 @@
 				F6B1741B1A2822C0005212E3 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6B174261A28240F005212E3 /* NSOutlineViewExample */ = {
+			isa = PBXGroup;
+			children = (
+				F6B174271A28241D005212E3 /* Person.swift */,
+				F6B174291A28266F005212E3 /* OutlineViewController.swift */,
+			);
+			name = NSOutlineViewExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +222,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6B174281A28241D005212E3 /* Person.swift in Sources */,
+				F6B1742A1A28266F005212E3 /* OutlineViewController.swift in Sources */,
 				F6B174091A2822C0005212E3 /* AppDelegate.swift in Sources */,
 				F6B1740C1A2822C0005212E3 /* ExampleCode.xcdatamodeld in Sources */,
 			);
