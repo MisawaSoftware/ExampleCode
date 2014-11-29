@@ -9,7 +9,7 @@
 import Foundation
 import Cocoa
 
-class SAM_OutlineViewController: NSObject, NSOutlineViewDataSource
+class SAM_OutlineViewController: NSObject, NSOutlineViewDataSource, NSOutlineViewDelegate
 {
     var people: [Person] = []
     var boss: Person = Person.init(personName: "Steve", personAge: 30)
@@ -59,6 +59,8 @@ class SAM_OutlineViewController: NSObject, NSOutlineViewDataSource
         println("Checking if expandable")
         println(item)
       
+        return false
+        
         if item as NSString == "Item is empty"
         {
             return false
@@ -66,7 +68,7 @@ class SAM_OutlineViewController: NSObject, NSOutlineViewDataSource
         else
         {
             println("Item is not empty")
-            return true
+            return false
         }
 
     }
@@ -84,39 +86,18 @@ class SAM_OutlineViewController: NSObject, NSOutlineViewDataSource
             return item!
         }
         
-        return "Item is empty"
+        return people[0]
     }
     
     func outlineView(outlineView: NSOutlineView, objectValueForTableColumn tableColumn: NSTableColumn?, byItem item: AnyObject?) -> AnyObject?
     {
-    
-        
-            if tableColumn?.identifier == "name"
-            {
-                println("Returning name")
-                println(item)
-               // var x = item as Person
-                return "name"
-            }
-        
-            if tableColumn?.identifier == "age"
-            {
-                println("Returning age")
-               
-                println(item)
-                // var x = item as Person
-                return "1"
-            }
-            println("returning empty")
-            return "Empty"
-        /*
-        if let theItem: AnyObject = item
+        println("Printing item")
+        println(item)
+        if(item is Person)
         {
-            let tmpfsItem: Person = item as Person
-            return tmpfsItem.name
+            return (item as Person).name
         }
-        return "Empyty"
-*/
+        return "Oops"
     }
     
     

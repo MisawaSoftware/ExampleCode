@@ -765,12 +765,13 @@
                                     </tableColumns>
                                     <connections>
                                         <outlet property="dataSource" destination="gYh-NG-u0d" id="Yva-wf-jUY"/>
+                                        <outlet property="delegate" destination="gYh-NG-u0d" id="ffy-RH-g85"/>
                                     </connections>
                                 </outlineView>
                             </subviews>
                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </clipView>
-                        <scroller key="horizontalScroller" verticalHuggingPriority="750" doubleValue="0.5" horizontal="YES" id="ufk-QK-eWu">
+                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="ufk-QK-eWu">
                             <rect key="frame" x="1" y="119" width="223" height="15"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
