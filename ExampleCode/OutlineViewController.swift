@@ -86,7 +86,7 @@ class SAM_OutlineViewController: NSObject, NSOutlineViewDataSource, NSOutlineVie
         if item is Person
         {
             let per = item as Person
-            return per.children[0]
+            return per.children[index]
         }
         
         return people[index]
