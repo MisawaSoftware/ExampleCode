@@ -35,6 +35,7 @@ class SAM_OutlineViewController: NSObject, NSOutlineViewDataSource, NSOutlineVie
         }
         
         people.append(boss)
+        people.append(Person.init(personName:"Ted", personAge:22))
  
     }
 
@@ -56,20 +57,22 @@ class SAM_OutlineViewController: NSObject, NSOutlineViewDataSource, NSOutlineVie
     
     func outlineView(outlineView: NSOutlineView, isItemExpandable item: AnyObject) -> Bool
     {
-        println("Checking if expandable")
+        println("Checking if children")
         println(item)
-      
-        return false
         
-        if item as NSString == "Item is empty"
+        
+        if item is Person
         {
-            return false
+            let per = item as Person
+            println(per.children)
+            if per.children.count != 0
+            {
+                return true
+            }
         }
-        else
-        {
-            println("Item is not empty")
-            return false
-        }
+        
+        return false
+      
 
     }
     
@@ -80,22 +83,29 @@ class SAM_OutlineViewController: NSObject, NSOutlineViewDataSource, NSOutlineVie
         println("Printing child index")
         println(index)
         
-        if item != nil
+        if item is Person
         {
-
-            return item!
+            let per = item as Person
+            return per.children[0]
         }
         
-        return people[0]
+        return people[index]
     }
     
     func outlineView(outlineView: NSOutlineView, objectValueForTableColumn tableColumn: NSTableColumn?, byItem item: AnyObject?) -> AnyObject?
     {
-        println("Printing item")
+        println("Printing item at objectvaluefortablecolumn")
         println(item)
         if(item is Person)
         {
+            if tableColumn?.identifier == "name"
+            {
             return (item as Person).name
+            }
+            if tableColumn?.identifier == "age"
+            {
+                return (item as Person).age
+            }
         }
         return "Oops"
     }
