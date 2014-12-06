@@ -24,6 +24,9 @@
 
 import Foundation
 
+
+//This is a class extension for NSString that adds URL encoding that will be needed for the geocoder class
+
 extension NSString
 {
     func encodedURLString() -> NSString
