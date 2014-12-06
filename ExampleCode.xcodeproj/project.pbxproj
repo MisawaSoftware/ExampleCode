@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6737C721A32B09100C22A25 /* NSString+URLEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6737C711A32B09100C22A25 /* NSString+URLEncoding.swift */; };
 		F693E8F51A2BD8CB00ECB86C /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F693E8F41A2BD8CB00ECB86C /* Storyboard.storyboard */; };
 		F693E8F71A2BDA5F00ECB86C /* LeftSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F693E8F61A2BDA5F00ECB86C /* LeftSplitViewController.swift */; };
 		F693E8F91A2BDA6B00ECB86C /* RightSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F693E8F81A2BDA6B00ECB86C /* RightSplitViewController.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F6737C711A32B09100C22A25 /* NSString+URLEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+URLEncoding.swift"; sourceTree = "<group>"; };
 		F693E8F41A2BD8CB00ECB86C /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		F693E8F61A2BDA5F00ECB86C /* LeftSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftSplitViewController.swift; sourceTree = "<group>"; };
 		F693E8F81A2BDA6B00ECB86C /* RightSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightSplitViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +66,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F6737C731A32B09700C22A25 /* Geocoder */ = {
+			isa = PBXGroup;
+			children = (
+				F6737C711A32B09100C22A25 /* NSString+URLEncoding.swift */,
+			);
+			name = Geocoder;
+			sourceTree = "<group>";
+		};
 		F67437CC1A2BFBF6006852D1 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +112,7 @@
 				F6B1740F1A2822C0005212E3 /* MainMenu.xib */,
 				F6B1740A1A2822C0005212E3 /* ExampleCode.xcdatamodeld */,
 				F6B174061A2822C0005212E3 /* Supporting Files */,
+				F6737C731A32B09700C22A25 /* Geocoder */,
 			);
 			path = ExampleCode;
 			sourceTree = "<group>";
@@ -242,6 +253,7 @@
 			files = (
 				F6B174281A28241D005212E3 /* Person.swift in Sources */,
 				F6B1742A1A28266F005212E3 /* OutlineViewController.swift in Sources */,
+				F6737C721A32B09100C22A25 /* NSString+URLEncoding.swift in Sources */,
 				F693E8F91A2BDA6B00ECB86C /* RightSplitViewController.swift in Sources */,
 				F693E8F71A2BDA5F00ECB86C /* LeftSplitViewController.swift in Sources */,
 				F6B174091A2822C0005212E3 /* AppDelegate.swift in Sources */,
