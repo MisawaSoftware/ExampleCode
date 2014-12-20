@@ -14,8 +14,21 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var window: NSWindow!
 
 
-    func applicationDidFinishLaunching(aNotification: NSNotification) {
+    func applicationDidFinishLaunching(aNotification: NSNotification)
+    {
+        println("application dif finish launching - revealing type with getDenangledType")
+        
+        let x = 0x128
+        
+        println( _stdlib_getDemangledTypeName(x))
+        
+        /*
 
+        cd `xcode-select -p`/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx
+        nm -a libswiftCore.dylib | grep "T _swift_stdlib_"
+        
+        Which reveals some very useful functions like _stdlib_getTypeName(), _stdlib_demangleName() and _stdlib_conformsToProtocol() among a few others.
+        */
         
     
     }

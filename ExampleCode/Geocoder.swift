@@ -14,7 +14,7 @@ class Geocoder
 {
     func getCoordinateForAddress(address: NSString)
     {
-    CLGeocoder
+ 
     }
     
 }
